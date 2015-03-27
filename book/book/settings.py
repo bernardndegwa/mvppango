@@ -98,6 +98,10 @@ INSTALLED_APPS = (
     #'allauth.socialaccount.providers.vk',
     #'allauth.socialaccount.providers.weibo',
     #'allauth.socialaccount.providers.xing',
+    
+    #Forms use bootstrap for alignment
+    'bootstrap3',
+    'bootstrapform',
 )
 
 SITE_ID = 1
