@@ -93,7 +93,7 @@ INSTALLED_APPS = (
     #'allauth.socialaccount.providers.stackexchange',
     #'allauth.socialaccount.providers.tumblr',
     #'allauth.socialaccount.providers.twitch',
-    'allauth.socialaccount.providers.twitter',
+    #'allauth.socialaccount.providers.twitter',
     #'allauth.socialaccount.providers.vimeo',
     #'allauth.socialaccount.providers.vk',
     #'allauth.socialaccount.providers.weibo',
@@ -104,7 +104,7 @@ INSTALLED_APPS = (
     'bootstrapform',
 )
 
-SITE_ID = 1
+SITE_ID = 2
 
 
 

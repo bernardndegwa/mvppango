@@ -20,8 +20,8 @@ def home_page(request):
         #return HttpResponse(request.POST['user_name'])
     courses = Course.objects.all()
     '''items = Item.objects.all()'''
-    #return render(request, 'section/home.html', {'courses':courses})
-    return render(request, 'section/home.html')
+    return render(request, 'section/home.html', {'courses':courses})
+    #return render(request, 'section/home.html')
 
 def view_list(request, course_id):
     course_ = Course.objects.get(id=course_id)

@@ -1,5 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>Example Project</h1>
-<p>Welcome</p>
+{% endblock %}
+{% block table %}
+<table id="id_courses_table" class="table">
+{% for item in course_set.all %}
+<tr><td>{{ forloop.counter }}: {{ item.course.title }}</td></tr>
+{% endfor %}
+</table>
 {% endblock %}
