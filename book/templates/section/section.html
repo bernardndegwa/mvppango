@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block header_text %}Sections{% endblock %}
+
+{% block table %}
+    <table id="sign_in_form">
+        {% for section in sections %}
+            <tr><td>{{ forloop.counter }}: {{ section.title }}</td></tr>
+        {% endfor %}
+    </table>
+{% endblock %}
+
+
+
+<html>
+	<title>Learn Interactively</title>
+	<body>
+		<!-- <p id="welcome_msg"></p>
+		<p id="carousel">rise</p>
+		<form method="post" action="/sections/{{ sections.id }}/add_item">
+			<input name="user_name" id="id_user_name" placeholder="Enter your name"/>
+			{% csrf_token %}
+		</form>
+		-->
+		<table id="sign_in_form">
+			{% for section in sections %}
+			<tr><td>{{ forloop.counter  }}  :  {{ section.title }}</td></tr>
+			{% endfor %}
+		</table>
+		<h1>Courses</h1>
+	</body>
+</html>

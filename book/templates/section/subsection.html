@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block header_text %}Sub-Sections{% endblock %}
+		{% block table %}
+		<table id="sign_in_form">
+			{% for sub_section in sub_sections %}
+			<tr><td>{{ forloop.counter  }}  :  {{ sub_section.title }}</td></tr>
+			{% endfor %}
+		</table>
+		{% endblock %}
